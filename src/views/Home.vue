@@ -1,9 +1,11 @@
 <template>
-  <div>home</div>
   <div>
+    <nav-bar></nav-bar>
+    <div>
     <div v-for="match in todayMatches" :key="match.id">
       {{ match.competition.name }}
     </div>
+  </div>
   </div>
 </template>
 
